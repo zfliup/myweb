@@ -7,10 +7,10 @@
     -->
     <div class="ante">
         <ul class="is-animating">
-            animation
+            name2
         </ul>
         <ul :class="['is-transform',isFlag?'':'is-transform-1']" @click="fn()">
-            33
+            user5
         </ul>
     </div>
 </template>

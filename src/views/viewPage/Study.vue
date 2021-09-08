@@ -1,6 +1,6 @@
 <template>
     <div class="study">
-        {{ fn }}
+        {{ fn }}33共和国
     </div>
 </template>
 
@@ -21,12 +21,16 @@ export default {
     mounted() {
 
     },
-    methods: {}
+    methods: {
+        add() {
+            console.log(1)
+        }
+    }
 }
 </script>
 
 <style lang="scss">
 .study {
-    
+
 }
 </style>
