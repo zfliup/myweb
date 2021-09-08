@@ -1,6 +1,6 @@
 <template>
     <div class="study">
-        {{ fn }}33
+        {{ fn }}334546
     </div>
 </template>
 
