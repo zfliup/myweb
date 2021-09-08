@@ -1,26 +1,26 @@
 <template>
-  <div class="headerMain">
-      <ul v-for="item in navList" :key="item.id" @click="go(item.path)">
-          {{item.name}}
-      </ul>
-  </div>
+    <div class="headerMain">
+        <ul v-for="item in navList" :key="item.id" @click="go(item.path)">
+            {{ item.name }}
+        </ul>
+    </div>
 </template>
 
 <script>
-import {getNav} from "../common";
+import {getNav} from '../common'
 
 export default {
-    name:'headerMain',
-    data(){
-        return{
-            navList:[]
+    name: 'HeaderMain',
+    data() {
+        return {
+            navList: []
         }
     },
     mounted() {
-        this.navList=getNav()
+        this.navList = getNav()
     },
-    methods:{
-        go(path){
+    methods: {
+        go(path) {
             // console.log(path)
             this.$router.push(path)
         }
@@ -30,9 +30,10 @@ export default {
 </script>
 
 <style lang="scss">
-.headerMain{
+.headerMain {
     display: flex;
-    &>ul{
+
+    & > ul {
         width: 100px;
         text-align: center;
         cursor: pointer;

@@ -1,21 +1,20 @@
 <template>
     <div>
-       <header-main/>
+        <header-main/>
         <router-view/>
     </div>
 </template>
 
 <script>
 import headerMain from '../components/headerMain.vue'
-    export default {
-        components: { headerMain },
-        name: "mainPage",
-        data(){
-            return{
 
-            }
-        }
+export default {
+    name: 'MainPage',
+    components: {headerMain},
+    data() {
+        return {}
     }
+}
 </script>
 
 <style scoped>
