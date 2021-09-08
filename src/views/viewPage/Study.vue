@@ -1,6 +1,6 @@
 <template>
     <div class="study">
-        {{ fn }}334546
+        {{ fn }}33共和国
     </div>
 </template>
 
@@ -21,7 +21,11 @@ export default {
     mounted() {
 
     },
-    methods: {}
+    methods: {
+        add() {
+            console.log(1)
+        }
+    }
 }
 </script>
 
