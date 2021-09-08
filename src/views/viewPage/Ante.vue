@@ -7,7 +7,7 @@
     -->
     <div class="ante">
         <ul class="is-animating">
-            name
+            name2
         </ul>
         <ul :class="['is-transform',isFlag?'':'is-transform-1']" @click="fn()">
             user
