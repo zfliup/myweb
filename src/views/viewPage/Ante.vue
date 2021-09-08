@@ -7,7 +7,7 @@
     -->
     <div class="ante">
         <ul class="is-animating">
-            Hao
+            Ha发发发发发发o
         </ul>
         <ul :class="['is-transform',isFlag?'':'is-transform-1']" @click="fn()">
             user
