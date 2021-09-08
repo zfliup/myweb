@@ -1,6 +1,6 @@
 <template>
     <div class="study">
-        {{ fn }}
+        {{ fn }}33
     </div>
 </template>
 
@@ -27,6 +27,6 @@ export default {
 
 <style lang="scss">
 .study {
-    
+
 }
 </style>
