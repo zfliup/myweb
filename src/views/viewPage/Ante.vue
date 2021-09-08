@@ -10,7 +10,7 @@
             animation
         </ul>
         <ul :class="['is-transform',isFlag?'':'is-transform-1']" @click="fn()">
-            338899
+            user
         </ul>
     </div>
 </template>
