@@ -1,6 +1,6 @@
 <template>
-    <div class="study">
-        {{ fn }}33共和国
+    <div class="study" @click="add">
+        {{ fn }}
     </div>
 </template>
 
@@ -9,12 +9,12 @@ export default {
     name: 'Study',
     data() {
         return {
-            msg: '好的'
+            msg: 1
         }
     },
     computed: {
         fn: function () {
-            return this.msg + 'ii'
+            return this.msg + 3
         }
     },
     watch: {},
@@ -23,7 +23,7 @@ export default {
     },
     methods: {
         add() {
-            console.log(1)
+            this.msg++
         }
     }
 }
@@ -31,6 +31,6 @@ export default {
 
 <style lang="scss">
 .study {
-
+    cursor: pointer;
 }
 </style>

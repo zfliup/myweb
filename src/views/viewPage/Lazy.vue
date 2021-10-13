@@ -43,7 +43,7 @@ export default {
                     this.data.push({name: this.count++})
                 }
                 console.log(this.page)
-                if (this.page === 6) {
+                if (this.page === 16) {
                     this.busy = true
                     this.msg = '没有更多了'
                 }
