@@ -1,19 +1,36 @@
 <template>
     <div id="future">
-        <ul style="height: 1000px"></ul>
+        <ul style="display: flex;justify-content: center">
+            <li @click="fn('Xn')" style="padding: 10px 20px;margin: 20px">Xn</li>
+            <li @click="fn('Yn')" style="padding: 10px 20px;margin: 20px">Yn</li>
+        </ul>
+        <keep-alive>
+            <component :is="compile"></component>
+        </keep-alive>
     </div>
 </template>
 
 <script>
+import Xn from "../../components/Xn";
+import Yn from "../../components/Yn";
+
 export default {
     name: "future",
-    mounted() {
-        let fut = document.getElementById('future')
-        fut.addEventListener('scroll', function () {
-            console.log(1)
-        })
+    components: {Yn, Xn},
+    data() {
+        return {
+            compile: 'Xn'
+        }
+
     },
-    methods: {}
+    mounted() {
+        console.log(111)
+    },
+    methods: {
+        fn(val) {
+            this.compile = val
+        }
+    }
 }
 </script>
 

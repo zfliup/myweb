@@ -1,8 +1,8 @@
 <!--vue自定义指令学习-->
 <template>
     <div>
-        test
         <div v-focus>{{ test }}</div>
+        <div v-demo="k"></div>
     </div>
 </template>
 
@@ -11,7 +11,8 @@ export default {
     name: "Test",
     data() {
         return {
-            test: 'ww'
+            test: 'ww',
+            k: 'rr'
         }
     },
     directives: {
