@@ -6,6 +6,7 @@ import emoji from "./emoji";
 import lazyLoad from "./lazyLoad";
 import permission from "./permission";
 import waterMarker from "./waterMarker";
+import selectLoad from "./selectLoad";
 // 自定义指令
 const directives = {
     copy,
@@ -15,7 +16,8 @@ const directives = {
     emoji,
     lazyLoad,
     permission,
-    waterMarker
+    waterMarker,
+    selectLoad
 }
 
 export default {
